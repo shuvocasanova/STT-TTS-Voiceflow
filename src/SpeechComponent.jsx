@@ -4,7 +4,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './SpeechComponent.css';
-const authorizationKey = process.env.REACT_APP_VOICEFLOW_AUTHORIZATION;
+// Load environment variables from .env file
+const authorizationKey = import.meta.env.VITE_REACT_APP_VOICEFLOW_AUTHORIZATION;
+console.log(authorizationKey)
 
 const SpeechComponent = () => {
   const [text, setText] = useState('');
