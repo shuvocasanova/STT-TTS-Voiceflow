@@ -49,7 +49,7 @@ const SpeechComponent = () => {
         },
         {
           headers: {
-            Authorization: authorizationKey,
+            Authorization: 'VF.DM.65fde2d4f066f5ce54054e5e.X6uZDJLOW3lAjOxN',
             'Content-Type': 'application/json',
             Accept: 'application/json',
           },
