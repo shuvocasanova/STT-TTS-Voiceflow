@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  background-image: url('logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.listening {
+  animation: glow 1s infinite alternate; /* Add glow animation when listening */
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 255, 0.5);
+  }
+  to {
+    box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.7);
+  }
+}
+
+.speaking {
+  animation: pulse 1s infinite alternate; /* Add pulse animation when speaking */
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
